@@ -1,0 +1,6 @@
+framework module Pods_CheetSheet2 {
+  umbrella header "Pods-CheetSheet2-umbrella.h"
+
+  export *
+  module * { export * }
+}
