@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Firebase
 
 protocol LessonViewProtocol {
     func closeSpinner()
@@ -33,6 +34,8 @@ class LessonViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Analytics.setScreenName("Lessons", screenClass: "LessonViewController")
 
     }
 

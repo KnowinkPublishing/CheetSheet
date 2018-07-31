@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import Firebase
 
 class DictionaryViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
@@ -38,6 +39,8 @@ class DictionaryViewController: UIViewController, UITextFieldDelegate, UITableVi
 
         tblDefinitions.rowHeight = UITableViewAutomaticDimension
         tblDefinitions.estimatedRowHeight = 120
+        
+        Analytics.setScreenName("Merriam Webster", screenClass: "DictionaryViewController")
 
     }
 

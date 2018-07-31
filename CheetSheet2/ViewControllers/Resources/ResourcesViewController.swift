@@ -35,6 +35,7 @@ class ResourcesViewController: UIViewController, UICollectionViewDelegate, UICol
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        Analytics.setScreenName("ResourceViewController", screenClass: "RessourceViewController")
 
     }
 

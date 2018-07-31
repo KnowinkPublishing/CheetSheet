@@ -9,6 +9,7 @@
 import UIKit
 import SwiftSpinner
 import RealmSwift
+import Firebase
 
 class QuizletViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 
@@ -37,6 +38,8 @@ class QuizletViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         tblQuizlet.rowHeight = UITableViewAutomaticDimension
         tblQuizlet.estimatedRowHeight = 120
+        
+        Analytics.setScreenName("Quizlet", screenClass: "QuizletViewController")
     }
 
     override func viewDidAppear(_ animated: Bool) {

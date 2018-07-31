@@ -9,6 +9,7 @@
 import UIKit
 import SwiftSpinner
 import RealmSwift
+import Firebase
 
 class PBSMediaViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDelegate, UITableViewDataSource {
 
@@ -44,6 +45,8 @@ class PBSMediaViewController: UIViewController, UITextFieldDelegate, UIPickerVie
         tblLessons.estimatedRowHeight = 120
 
         self.view.bringSubview(toFront: vTableWrapper)
+        
+        Analytics.setScreenName("PBS Learning Media", screenClass: "PBSMediaViewController")
     }
 
     override func viewDidAppear(_ animated: Bool) {

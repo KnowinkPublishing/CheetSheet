@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftSpinner
+import Firebase
 
 class ResourceListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, LessonViewProtocol {
 
@@ -41,6 +42,8 @@ class ResourceListViewController: UIViewController, UITableViewDelegate, UITable
         tblResourceList.rowHeight = UITableViewAutomaticDimension
         tblResourceList.estimatedRowHeight = 140
         configFile.arrOriginalData = arrData
+        
+        Analytics.setScreenName("Khan Academy", screenClass: "ResourceListViewController")
 
     }
 
